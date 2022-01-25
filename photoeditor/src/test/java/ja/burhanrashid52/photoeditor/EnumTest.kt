@@ -1,13 +1,14 @@
 package ja.burhanrashid52.photoeditor
 
 import ja.burhanrashid52.photoeditor.shape.ShapeType
+import junit.framework.TestCase.assertEquals
 import org.junit.Assert
 import org.junit.Test
 
 class EnumTest {
     @Test
     fun testNumberOfViewTypes() {
-        Assert.assertEquals(ViewType.values().size.toLong(), 4)
+        assertEquals(ViewType.values().size.toLong(), 4)
     }
 
     @Test
@@ -17,6 +18,6 @@ class EnumTest {
 
     @Test
     fun testNumberOfPhotoFilterTypes() {
-        Assert.assertEquals(PhotoFilter.values().size.toLong(), 24)
+        assertEquals(PhotoFilter.values().size.toLong(), 24)
     }
 }
