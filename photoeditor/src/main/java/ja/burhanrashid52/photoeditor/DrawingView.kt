@@ -152,6 +152,7 @@ class DrawingView @JvmOverloads constructor(
                 ShapeType.ARROW -> {
                     shape = ArrowShape()
                 }
+                null ->{}
             }
         }
 
